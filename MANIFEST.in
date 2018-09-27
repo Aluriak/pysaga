@@ -1,0 +1,5 @@
+include *.mkd
+include MANIFEST.in
+include Makefile
+recursive-include *.py
+prune test
