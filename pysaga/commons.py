@@ -8,7 +8,7 @@ from . import utils
 
 
 TEMPLATE_PATH = 'sagas-mp3/{saga_name}/Textes/'
-REFWORDS = 'REF', 'LOL', 'TRI'
+REFWORDS = 'REF', 'LOL', 'TRI', 'JDM'
 REG_CHAPTER = re.compile(r"^Chapitre ([0-9]+) - (.+)$")
 REG_CHARACTER = re.compile(r"^([A-Z0-9ÉÈÊÀÄÂÔÛÏ.,!?' -]+) : ?")
 REG_LINE = re.compile(r"^([A-Z0-9ÉÈÊÀÄÂÔÛÏ.,!?' -]+) : (.+)")
