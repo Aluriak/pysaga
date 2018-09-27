@@ -1,0 +1,11 @@
+*.pyc
+.cache/
+.pytest_cache/
+Session.vim
+__pycache__/
+build
+debug/
+dist/
+pysaga.egg-info/
+sagas-mp3/
+venv/
