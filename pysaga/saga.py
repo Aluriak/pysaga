@@ -7,8 +7,7 @@ import re
 import glob
 from dataclasses import dataclass
 
-from . import commons
-from .commons import REG_CHAPTER, REG_CHARACTER, TEMPLATE_PATH, UNPARSABLES
+from .commons import REG_CHAPTER, REG_CHARACTER, TEMPLATE_PATH, UNPARSABLES, SAGA_NAME
 from .parse_line import parse_line
 
 
@@ -20,7 +19,7 @@ class Saga:
 
     def __init__(self, name:str):
         self.uid = name
-        self.name = commons.SAGA_NAME[name]
+        self.name = SAGA_NAME[name]
         self.__load(name)
 
     def __call__(self, name:str):
