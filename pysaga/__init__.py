@@ -6,6 +6,9 @@ from .saga import Saga
 from .parse_line import parse_line
 
 
+__version__ = '0.0.1'
+
+
 def get(saga_name:str):
     try:
         saga_name = commons.SAGA_ALIASES[saga_name.lower()]
