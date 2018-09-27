@@ -11,3 +11,11 @@ test:
 
 
 .PHONY: package t test
+
+
+release:
+	fullrelease
+install_deps:
+	- python -c "import configparser; c = configparser.ConfigParser(); c.read('setup.cfg'); print(c['options']['install_requires'])" | xargs pip install -U
+	- python -c "import configparser; c = configparser.ConfigParser(); c.read('setup.cfg'); print(c['options']['test_requires'])" | xargs pip install -U
+	- python -c "import configparser; c = configparser.ConfigParser(); c.read('setup.cfg'); print(c['options']['packaging_requires'])" | xargs pip install -U
