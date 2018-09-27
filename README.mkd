@@ -15,8 +15,19 @@ Installation avec pip:
             print(episode.chapters[0].lines[0].content)
             print(episode.chapters[0].lines[2].content)
 
+    # Non-implémenté :
     for episode in pysaga.get('Reflets d'Acide').episodes:
         print(f"L'épisode {episode.nb} contient {len(episode.chapters)} chapitres.")
         for chapter, characters in episode.chapters(chars=True):
             print(f"\tLe chapitre {chapter.nb} fait intervenir {', '.join(characters)}")
 
+
+
+## TODO
+- packaging fonctionnel
+- intégrer les données de Neamar/sagas-mp3 ?
+- implémenter l'interface haut-niveau
+- des tests sur les données connues, genre le premier exemple de ce readme.
+- implémenter un accès facile et haut-niveau pour les séries épisodes et chapitres (cf exemples de ce readme)
+- différencier les *épisodes* et les *fichiers*, car de nombreux fichiers ne sont pas des épisodes
+- tester sur les autres sagas (xantah et adop)
