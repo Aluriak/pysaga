@@ -5,6 +5,8 @@ Installation avec pip:
 
     pip install pysaga
 
+NOTE: nécessite python 3.7.
+
 
 ## Exemple avec Reflets d'Acide
 
